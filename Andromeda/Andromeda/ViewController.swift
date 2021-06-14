@@ -13,27 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Picture of the Day: "
+        self.navigationItem.title = "Picture of the Day: "
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        loadPicOfDay()
-
     }
-    
-    func loadPicOfDay() {
-        DispatchQueue.global().async { [weak self] in
-            
-            if let data = try? Data(contentsOf: URL(string: "https://apod.nasa.gov/apod/image/2106/JunSE_DSC_7477b_1024.jpg")!) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.picOfTheDay.image = image
-                    }
-                }
-            }
-            
-        }
-    }
-
-
 }
 
