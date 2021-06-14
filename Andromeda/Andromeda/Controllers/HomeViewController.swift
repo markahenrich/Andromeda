@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Andromeda
 //
 //  Created by Mark Henrich on 6/7/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet var picOfTheDay: UIImageView!
     
     override func viewDidLoad() {
