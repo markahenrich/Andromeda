@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA864E3926773656002D2FBC /* APODService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA864E3826773656002D2FBC /* APODService.swift */; };
+		AABC103926776DB60002C27D /* APODDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC103826776DB60002C27D /* APODDetailViewController.swift */; };
 		AABE3D7026748DE3001A5000 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABE3D6F26748DE3001A5000 /* APIKey.swift */; };
 		AAEED1D3266EBDF60066662E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEED1D2266EBDF60066662E /* AppDelegate.swift */; };
 		AAEED1D5266EBDF60066662E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEED1D4266EBDF60066662E /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		AA864E3826773656002D2FBC /* APODService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODService.swift; sourceTree = "<group>"; };
+		AABC103826776DB60002C27D /* APODDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDetailViewController.swift; sourceTree = "<group>"; };
 		AABE3D6F26748DE3001A5000 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		AAEED1CF266EBDF60066662E /* Andromeda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Andromeda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEED1D2266EBDF60066662E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				AAEED1D6266EBDF60066662E /* HomeViewController.swift */,
+				AABC103826776DB60002C27D /* APODDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				AA864E3926773656002D2FBC /* APODService.swift in Sources */,
 				AABE3D7026748DE3001A5000 /* APIKey.swift in Sources */,
 				AAEED1D5266EBDF60066662E /* SceneDelegate.swift in Sources */,
+				AABC103926776DB60002C27D /* APODDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
