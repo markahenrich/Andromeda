@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Picture of the Day: -->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Andromeda" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VLf-Jo-2kr">
-                                <rect key="frame" x="0.0" y="88" width="414" height="494"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VLf-Jo-2kr" secondAttribute="bottom" constant="231" id="44o-ao-beZ"/>
                             <constraint firstItem="VLf-Jo-2kr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jhh-sU-Gh7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VLf-Jo-2kr" secondAttribute="bottom" id="hpi-x5-zKc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VLf-Jo-2kr" secondAttribute="trailing" id="rRO-Np-pNx"/>
                             <constraint firstItem="VLf-Jo-2kr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xUd-08-iEo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7UY-r9-Tpg"/>
+                    <navigationItem key="navigationItem" title="Picture of the Day: " id="7UY-r9-Tpg"/>
                     <connections>
                         <outlet property="picOfTheDay" destination="VLf-Jo-2kr" id="FPs-4G-9v4"/>
                     </connections>
@@ -44,8 +44,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G95-i9-JeT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="Wgo-uR-f9r"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="00O-Da-ZYV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="00O-Da-ZYV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -63,6 +63,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9rE-4U-d0j" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R4G-hA-J9D">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

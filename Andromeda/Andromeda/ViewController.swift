@@ -13,9 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Picture of the Day: "
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
     }
 }
 
