@@ -9,18 +9,32 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet var picOfTheDay: UIImageView!
-    @IBOutlet var learnMoreBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        picOfTheDay.image = UIImage(named: "test")
-        learnMoreBtn.layer.cornerRadius = 15
-        learnMoreBtn.clipsToBounds = true
+        let apod = APODService.shared.getAPOD()
+        let image = APODService.shared.loadImage(apod: apod)
+        picOfTheDay.image = image
+        
     }
     
     @IBAction func didTapImageView(_ sender: UITapGestureRecognizer) {
-        print("tapped")
+        let imageView = sender.view as! UIImageView
+        let newImageView = UIImageView(image: imageView.image)
+        newImageView.frame = UIScreen.main.bounds
+        newImageView.backgroundColor = UIColor.black
+        newImageView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        newImageView.addGestureRecognizer(tap)
+        newImageView.contentMode = .scaleAspectFill
+        self.view.addSubview(newImageView)
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
     }
-    
+    @objc func dismissFullscreenImage(sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
+    }
 }

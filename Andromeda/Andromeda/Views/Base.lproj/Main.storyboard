@@ -16,39 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VLf-Jo-2kr">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VLf-Jo-2kr">
                                 <rect key="frame" x="0.0" y="140" width="414" height="500"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="mv2-fO-ejf" appends="YES" id="wNq-Ow-K2U"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MST-y1-J1l">
-                                <rect key="frame" x="127" y="689" width="160" height="34"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <state key="normal" title="Learn More...">
-                                    <color key="titleColor" systemColor="systemPurpleColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="xYs-sU-RSZ" kind="presentation" id="qYG-se-tv9"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VLf-Jo-2kr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jhh-sU-Gh7"/>
-                            <constraint firstItem="MST-y1-J1l" firstAttribute="centerX" secondItem="VLf-Jo-2kr" secondAttribute="centerX" id="KEk-Q4-2G5"/>
-                            <constraint firstItem="MST-y1-J1l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="T5H-LX-YCq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VLf-Jo-2kr" secondAttribute="bottom" constant="173" id="dLM-2T-X55"/>
-                            <constraint firstItem="MST-y1-J1l" firstAttribute="top" secondItem="VLf-Jo-2kr" secondAttribute="bottom" constant="49" id="hmN-Jd-hwl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VLf-Jo-2kr" secondAttribute="trailing" id="rRO-Np-pNx"/>
                             <constraint firstItem="VLf-Jo-2kr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xUd-08-iEo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Picture of the Day: " id="7UY-r9-Tpg"/>
                     <connections>
-                        <outlet property="learnMoreBtn" destination="MST-y1-J1l" id="gHj-Ft-Te5"/>
                         <outlet property="picOfTheDay" destination="VLf-Jo-2kr" id="FPs-4G-9v4"/>
                     </connections>
                 </viewController>
@@ -60,35 +46,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="110.49107142857143"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="fuF-MA-jyJ">
-            <objects>
-                <viewController storyboardIdentifier="APODDetail" hidesBottomBarWhenPushed="YES" id="xYs-sU-RSZ" customClass="APODDetailViewController" customModule="Andromeda" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="q8W-wg-bVn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fjm-sm-epW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="8PW-jS-cWH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="fjm-sm-epW" firstAttribute="centerX" secondItem="8PW-jS-cWH" secondAttribute="centerX" id="Lao-3S-ANp"/>
-                            <constraint firstItem="fjm-sm-epW" firstAttribute="top" secondItem="8PW-jS-cWH" secondAttribute="top" id="MkT-4D-O9z"/>
-                            <constraint firstItem="fjm-sm-epW" firstAttribute="width" secondItem="q8W-wg-bVn" secondAttribute="width" id="frf-Ff-WKq"/>
-                            <constraint firstItem="8PW-jS-cWH" firstAttribute="bottom" secondItem="fjm-sm-epW" secondAttribute="bottom" constant="558" id="sUE-x5-Guc"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="fjm-sm-epW" id="9sB-ae-3pf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="frh-5h-ntJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2821.739130434783" y="109.82142857142857"/>
         </scene>
         <!--Home-->
         <scene sceneID="N3A-Br-MHI">
@@ -129,13 +86,11 @@
             <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemPurpleColor"/>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
