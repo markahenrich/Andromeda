@@ -19,9 +19,6 @@
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VLf-Jo-2kr">
                                 <rect key="frame" x="0.0" y="140" width="414" height="500"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="mv2-fO-ejf" appends="YES" id="wNq-Ow-K2U"/>
-                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -39,11 +36,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="mv2-fO-ejf">
-                    <connections>
-                        <action selector="didTapImageView:" destination="BYZ-38-t0r" id="ZLg-Vu-Dxy"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="110.49107142857143"/>
         </scene>
