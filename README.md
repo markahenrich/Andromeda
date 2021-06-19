@@ -1,5 +1,11 @@
 # Andromeda
-An iOS app for consuming NASA's open API's starting with Astronomy Picture of The Day.
+An iOS app for consuming NASA's open API's.
 
 ### Technologies
-Swift, UiKit
+- Swift
+- Frameworks: UIKit
+
+### Design
+
+- MVC design pattern
+- UI: storyboards, programmatic (frame, NSLayout)
